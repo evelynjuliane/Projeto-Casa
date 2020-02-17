@@ -1,0 +1,39 @@
+@model IEnumerable<CasaDeShow.Models.Categoria>
+@{
+    Layout = "_LayoutAdmin";
+}
+<br>
+<h2>Categorias</h2>
+
+<hr/>
+<a  class="btn btn-success" asp-action="NovaCategoria" asp-controller="Admin">Adicionar Nova Categoria</a>
+<br>
+<br>
+<table id="categorias" class=" table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Imagem</th>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var categoria in Model){
+            <tr>
+                <td><img src= @categoria.img height="42" width="42"></td>
+                <td>@categoria.Id</td>
+                <td>@categoria.Nome</td>
+                <td>
+                  
+                    <a class="btn btn-primary" href="/Admin/EditarCategoria/@categoria.Id" >Editar</a>
+                    <form asp-action="Deletar" asp-controller="Categorias" style="display: inline;">
+                        <input type="hidden" name="id" id="id" value="@categoria.Id">
+                        <button class="btn btn-danger">Deletar</button>
+                    </form>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
