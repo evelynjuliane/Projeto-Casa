@@ -23,7 +23,8 @@
     <span asp-validation-for="QuantDeIngressos"> </span>
 
     <label asp-for="Data">Data do Evento</label>
-    <input type="date" asp-for="Data" class="form-control" placeholder="Data do Evento">
+    
+    <input type="datetime-local"  class="form-control " asp-for="Data"  placeholder="Ex.: 00/00/0000 00:00:00">
     <span asp-validation-for="Data"> </span>
    
 

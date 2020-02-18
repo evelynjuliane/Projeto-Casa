@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
@@ -47,9 +48,13 @@ namespace CasaDeShow.Areas.Identity.Pages.Account
         {
             [Required]
             [EmailAddress]
-            
+
             [Display(Name = "Email")]
             public string Email { get; set; }
+            [Required]
+            [Display(Name= "fullname")]
+            [StringLength(100, ErrorMessage = "Nome deve ter pelo menos duas letras", MinimumLength = 2)]
+            public string fullname{ get; set; }
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
@@ -59,7 +64,7 @@ namespace CasaDeShow.Areas.Identity.Pages.Account
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Compare("Password", ErrorMessage = "A confirmação de senha não confere.")]
             public string ConfirmPassword { get; set; }
         }
 
@@ -77,6 +82,7 @@ namespace CasaDeShow.Areas.Identity.Pages.Account
             {
                 var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
+                await _userManager.AddClaimAsync(user, new Claim("fullname", Input.fullname));
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");

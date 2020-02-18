@@ -20556,11 +20556,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\EJDH\\MyProjectsCSharp\\CasaDeShow\\Views\\User\\NovaVenda.cshtml",
-      "TargetPath": "Views\\User\\NovaVenda.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\EJDH\\MyProjectsCSharp\\CasaDeShow\\Views\\Admin\\NovoEvento.cshtml",
       "TargetPath": "Views\\Admin\\NovoEvento.cshtml",
       "FileKind": "mvc"
@@ -20593,6 +20588,16 @@
     {
       "FilePath": "c:\\Users\\EJDH\\MyProjectsCSharp\\CasaDeShow\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\EJDH\\MyProjectsCSharp\\CasaDeShow\\Views\\User\\Exibir.cshtml",
+      "TargetPath": "Views\\User\\Exibir.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\EJDH\\MyProjectsCSharp\\CasaDeShow\\Views\\User\\Index.cshtml",
+      "TargetPath": "Views\\User\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

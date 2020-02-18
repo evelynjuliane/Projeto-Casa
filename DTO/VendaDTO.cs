@@ -25,7 +25,7 @@ namespace CasaDeShow.DTO {
 
         public int CategoriaID { get; set; }
 
-        public string Img { get; set; }
+        public string img { get; set; }
         public bool Status { get; set; }
 
         public int EventoID { get; set; }

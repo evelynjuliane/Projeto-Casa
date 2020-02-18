@@ -173,4 +173,5 @@ C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Id
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\Historico.cshtml.g.cs
-C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\NovaVenda.cshtml.g.cs
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\Exibir.cshtml.g.cs

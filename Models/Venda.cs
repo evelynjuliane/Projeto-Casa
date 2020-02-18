@@ -18,12 +18,12 @@ namespace CasaDeShow.Models {
         public CasaShow CasaShow { get; set; }
         public Categoria Categoria { get; set; }
 
-        public string Img { get; set; }
        
         public int EventoID { get; set; }
         
         public int QuantidadeComprada{ get; set; }
-         
+        public double Total{ get; set; }
+
         public bool Status { get; set; }
 
     }

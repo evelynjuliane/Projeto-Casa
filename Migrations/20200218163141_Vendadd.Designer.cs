@@ -3,14 +3,16 @@ using System;
 using CasaDeShow.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CasaDeShow.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200218163141_Vendadd")]
+    partial class Vendadd
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -113,6 +115,9 @@ namespace CasaDeShow.Migrations
 
                     b.Property<int>("EventoID")
                         .HasColumnType("int");
+
+                    b.Property<string>("Img")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<string>("Nome")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");

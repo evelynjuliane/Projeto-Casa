@@ -4,9 +4,10 @@ using CasaDeShow.Data;
 using CasaDeShow.DTO;
 using CasaDeShow.Models;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Authorization;
 namespace CasaDeShow.Controllers
 {
+    [Authorize(Policy="Admin")]
     public class CasaShowController : Controller
     {
         private readonly ApplicationDbContext database;

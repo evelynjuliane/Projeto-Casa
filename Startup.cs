@@ -30,8 +30,9 @@ namespace CasaDeShow
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddAuthorization(options => options.AddPolicy("Admin", policy => policy.RequireClaim("Fullname", "Admin")));
             services.AddControllersWithViews();
-           services.AddRazorPages();
+            services.AddRazorPages();
         }
         // This method gets called by the runtime. Use this method to add services to the container.
 
@@ -62,7 +63,7 @@ namespace CasaDeShow
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=User}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

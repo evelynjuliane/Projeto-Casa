@@ -1,6 +1,6 @@
 @model IEnumerable<CasaDeShow.Models.Evento>
 @{
-    Layout= "_LayoutAdmin";
+    Layout= "_Layout";
 }
 
 
@@ -18,6 +18,8 @@
                         @if(evento.Categoria.Status == true && evento.CasaShow.Status == true){
  
                             <div class="col-md-4 col-sm-6 produto">
+                                <br>
+                                <br>
                                 <div class="card" style="width: 18rem;">
                                     <img src= @evento.img class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -30,12 +32,11 @@
                                             <a class="btn btn-danger"> Ingressos Esgotados!</a> 
                                         }else{
                                             
-                                            <form asp-action="Nova" asp-controller="User" style="display: inline;">
+                                            <form asp-action="Exibir" asp-controller="User" style="display: inline;">
                                                 <input type="hidden" name="id" id="id" value="@evento.Id">
-                                            <button class="btn btn-danger">Buy</button>
-                                             </form>
-                                                 <a href="Exibir/@evento.Id" class="btn btn-success">Comprar</a>
-                                            
+                                                <button class="btn btn-success">Comprar</button>
+                                            </form>
+                                                 
                                         }
                                         
                                     </div>

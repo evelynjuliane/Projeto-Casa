@@ -7,9 +7,10 @@ using CasaDeShow.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
+using Microsoft.AspNetCore.Authorization;
 namespace CasaDeShow.Controllers {
-    public class CategoriasController : Controller {
+    [Authorize(Policy="Admin")]
+        public class CategoriasController : Controller {
         private readonly ApplicationDbContext database;
         private IWebHostEnvironment _hostingEnvironment;
         public CategoriasController (ApplicationDbContext database, IWebHostEnvironment host) {
