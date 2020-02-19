@@ -20636,11 +20636,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\EJDH\\MyProjectsCSharp\\CasaDeShow\\Views\\Shared\\_LayoutAdmin.cshtml",
-      "TargetPath": "Views\\Shared\\_LayoutAdmin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\EJDH\\MyProjectsCSharp\\CasaDeShow\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"

@@ -1,6 +1,6 @@
 @model IEnumerable<CasaDeShow.Models.Categoria>
 @{
-    Layout = "_LayoutAdmin";
+    Layout= "_Layout";
 }
 <br>
 <h2>Categorias</h2>
@@ -26,10 +26,10 @@
                 <td>@categoria.Nome</td>
                 <td>
                   
-                    <a class="btn btn-primary" href="/Admin/EditarCategoria/@categoria.Id" >Editar</a>
+                    <a class="btn" href="/Admin/EditarCategoria/@categoria.Id" ><img src="/img/icon-editar.png" style="width: 30px; height: 30px;"></a>
                     <form asp-action="Deletar" asp-controller="Categorias" style="display: inline;">
                         <input type="hidden" name="id" id="id" value="@categoria.Id">
-                        <button class="btn btn-danger">Deletar</button>
+                        <button class="btn"><img src="/img/icon-deletar.png" style="width: 30px; height: 30px;"></button>
                     </form>
                     
                 </td>

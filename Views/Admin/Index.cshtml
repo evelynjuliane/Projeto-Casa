@@ -1,6 +1,6 @@
 @model IEnumerable<CasaDeShow.Models.Evento>
 @{
-    Layout= "_LayoutAdmin";
+    Layout= "_Layout";
 }
 
 
@@ -18,8 +18,8 @@
                         @if(evento.Categoria.Status == true && evento.CasaShow.Status == true){
  
                             <div class="col-md-4 col-sm-6 produto">
-                                <div class="card" style="width: 18rem;">
-                                    <img src= @evento.img class="card-img-top" alt="...">
+                                <div class="card" style="width: 18rem; min-= ">
+                                    <img src= @evento.img class="card-img-top" style="height: 18rem;" alt="...">
                                     <div class="card-body">
                                         <h5 class="card-title">@evento.Nome</h5>
                                         <p class="card-text">Gênero: @evento.Categoria.Nome</p>

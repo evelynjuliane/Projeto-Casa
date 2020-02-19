@@ -1,6 +1,6 @@
 @model IEnumerable<CasaDeShow.Models.Evento>
 @{
-    Layout = "_LayoutAdmin";
+    Layout= "_Layout";
 }
 <br>
 <h2>Criar Novos Eventos</h2>
@@ -39,10 +39,10 @@
                     
                     <td>
                         
-                        <a class="btn btn-primary" href="/Admin/EditarEvento/@evento.Id" >Editar</a>
+                        <a class="btn" href="/Admin/EditarEvento/@evento.Id" ><img src="/img/icon-editar.png" style="width: 30px; height: 30px;"></a>
                         <form asp-action="Deletar" asp-controller="Eventos" style="display: inline;">
                             <input type="hidden" name="id" id="id" value="@evento.Id">
-                            <button class="btn btn-danger">Deletar</button>
+                            <button class="btn"><img src="/img/icon-deletar.png" style="width: 30px; height: 30px;"></button>
                         </form>
                         
                     </td>

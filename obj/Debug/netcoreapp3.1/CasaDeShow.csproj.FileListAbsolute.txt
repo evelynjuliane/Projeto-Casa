@@ -55,7 +55,6 @@ C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\CasaDeShow.Tag
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\CasaDeShow.TagHelpers.output.cache
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\CasaDeShow.RazorCoreGenerate.cache
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -164,7 +163,6 @@ C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Ad
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Eventos.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Admin\NovoEvento.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Admin\NovoCasaShow.cshtml.g.cs
-C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditarCategoria.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditarCasaShow.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Admin\EditarEvento.cshtml.g.cs
@@ -175,3 +173,4 @@ C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Ad
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\Historico.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\Exibir.cshtml.g.cs
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs

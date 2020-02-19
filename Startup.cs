@@ -30,7 +30,7 @@ namespace CasaDeShow
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddAuthorization(options => options.AddPolicy("Admin", policy => policy.RequireClaim("Fullname", "Admin")));
+            services.AddAuthorization(options => options.AddPolicy("Admin", policy => policy.RequireClaim("fullname", "Admin")));
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -63,7 +63,7 @@ namespace CasaDeShow
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=User}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
