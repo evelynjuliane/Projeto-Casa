@@ -17,7 +17,7 @@ namespace CasaDeShow.Controllers
 
         [HttpPost]
         public IActionResult Salvar(CasaShowDTO casaTemporaria){
-                if(ModelState.IsValid){
+            if(ModelState.IsValid){
                 CasaShow casashow = new CasaShow();
                 casashow.Nome = casaTemporaria.Nome;
                 casashow.Local = casaTemporaria.Local;
@@ -26,7 +26,7 @@ namespace CasaDeShow.Controllers
                 database.SaveChanges();
                 return RedirectToAction("CasaShows", "Admin");
             }else{
-                return View("../Admin/NovaCasaShow");
+                return View("../Admin/NovoCasaShow");
             }
         }
         [HttpPost]

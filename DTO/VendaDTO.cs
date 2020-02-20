@@ -13,6 +13,7 @@ namespace CasaDeShow.DTO {
         public string User { get; set; }
 
         public string Nome { get; set; }
+        [Required]
 
         public int QuantidadeDeIngressos { get; set; }
 

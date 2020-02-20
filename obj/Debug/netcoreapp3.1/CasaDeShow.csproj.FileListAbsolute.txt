@@ -174,3 +174,6 @@ C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Us
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\User\Exibir.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
