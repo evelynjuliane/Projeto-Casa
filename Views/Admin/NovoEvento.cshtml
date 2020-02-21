@@ -10,7 +10,7 @@
 
     <label asp-for="Nome">Nome</label>
     <input type="text" asp-for="Nome" class="form-control" placeholder="Nome do Evento">
-    <span asp-validation-for="Nome"> </span>
+    <span asp-validation-for="Nome"> </span><br>
 
     <label>Selecione Categoria</label><br>
     <select class="form-controll" asp-for="CategoriaID" asp-items='@(new SelectList(@ViewBag.Categorias, "Id", "Nome"))'></select><br>
