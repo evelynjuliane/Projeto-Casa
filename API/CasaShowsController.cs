@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using CasaDeShow.Data;
 using CasaDeShow.DTO;
@@ -7,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CasaDeShow.Controllers
 {
-    [Route("api/v1/casashow")]
+    [Route("api/v1/casas")]
     [ApiController]
     public class CasaShowsController : ControllerBase
     {
@@ -19,7 +20,7 @@ namespace CasaDeShow.Controllers
         [HttpGet]
         public IActionResult Get() {
             try{
-                var casa = database.CasasShows.Where (c => c.Status == true).ToList ();
+                var casa = database.CasasShows.ToList ();
                 return Ok(casa);
             }catch(Exception e){
                 Response.StatusCode = 404;
@@ -37,6 +38,61 @@ namespace CasaDeShow.Controllers
                 return new ObjectResult("");
             }
             
+        }
+        //Ordem Crescente PENDENTE
+        [HttpGet("{action}")]
+        public IActionResult asc(){
+            List<String> list = new List<String>();
+            List<CasaShow> list1 = new List<CasaShow>();
+
+            var aux = database.CasasShows.ToList ();
+            foreach(var item in aux){
+               list.Add(item.Nome);
+            }
+            list.Sort();
+           foreach(var item in list){
+                var arm = database.CasasShows.First(c => c.Nome == item);
+                list1.Add(arm);
+            }
+            return Ok(list1);
+            
+        }
+        //Ordem Decrescente PENDENTE
+        [HttpGet("{action}")]
+        public IActionResult desc(){
+            List<String> list = new List<String>();
+            IList<CasaShow> list1 = new List<CasaShow>();
+
+            var aux = database.CasasShows.ToList ();
+            foreach(var item in aux){
+               list.Add(item.Nome);
+            }
+            list.Sort();
+           foreach(var item in list){
+                var arm = database.CasasShows.First(c => c.Nome == item);
+                //for (int i = 0 ; i =; i--){
+                   // list1.Add(arm);
+                //}
+                    
+            }
+            return Ok(list1);
+            
+        }
+            
+        
+        //Nome
+        [HttpGet("{action}/{nome}")]
+        public IActionResult nome(string nome){
+            try
+            {
+                var casa = database.CasasShows.First(c => c.Nome == nome);
+                return Ok(casa);
+            }catch(Exception e){
+                Response.StatusCode = 404;
+                return new ObjectResult(new {msg = "O Nome não existe na lista."});
+            }
+            
+
         }
         //SAVE
         [HttpPost]
