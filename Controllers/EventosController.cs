@@ -82,7 +82,7 @@ namespace CasaDeShow.Controllers {
         }
 
         [HttpPost]
-        public IActionResult Deletar (int id) {
+        public IActionResult Delete (int id) {
             if (id > 0) {
                 var evento = database.Eventos.First (eve => eve.Id == id);
                 evento.Status = false;

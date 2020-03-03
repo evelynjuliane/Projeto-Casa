@@ -177,3 +177,7 @@ C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Views\Ho
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\EJDH\MyProjectsCSharp\CasaDeShow\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll

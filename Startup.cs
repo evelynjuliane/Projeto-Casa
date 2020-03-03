@@ -33,6 +33,9 @@ namespace CasaDeShow
             services.AddAuthorization(options => options.AddPolicy("Admin", policy => policy.RequireClaim("fullname", "Admin")));
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSwaggerGen(config => {
+                config.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo{Title="API de Produtos", Version="v1"});
+            });
         }
         // This method gets called by the runtime. Use this method to add services to the container.
 
@@ -58,6 +61,10 @@ namespace CasaDeShow
 
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseSwagger();
+            app.UseSwaggerUI(config => {
+                config.SwaggerEndpoint("/Swagger/v1/swagger.json", "v1 docs");
+            });
 
             app.UseEndpoints(endpoints =>
             {
